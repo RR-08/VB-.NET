@@ -1,0 +1,17 @@
+C:\Users\Hp\Desktop\VBNet\RR-08Application\bin\Debug\net6.0-windows\RR-08Application.exe
+C:\Users\Hp\Desktop\VBNet\RR-08Application\bin\Debug\net6.0-windows\RR-08Application.deps.json
+C:\Users\Hp\Desktop\VBNet\RR-08Application\bin\Debug\net6.0-windows\RR-08Application.runtimeconfig.json
+C:\Users\Hp\Desktop\VBNet\RR-08Application\bin\Debug\net6.0-windows\RR-08Application.dll
+C:\Users\Hp\Desktop\VBNet\RR-08Application\bin\Debug\net6.0-windows\RR-08Application.pdb
+C:\Users\Hp\Desktop\VBNet\RR-08Application\obj\Debug\net6.0-windows\RR-08Application.vbproj.AssemblyReference.cache
+C:\Users\Hp\Desktop\VBNet\RR-08Application\obj\Debug\net6.0-windows\RR_08Application.Form1.resources
+C:\Users\Hp\Desktop\VBNet\RR-08Application\obj\Debug\net6.0-windows\RR-08Application.vbproj.GenerateResource.cache
+C:\Users\Hp\Desktop\VBNet\RR-08Application\obj\Debug\net6.0-windows\RR-08Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hp\Desktop\VBNet\RR-08Application\obj\Debug\net6.0-windows\RR-08Application.AssemblyInfoInputs.cache
+C:\Users\Hp\Desktop\VBNet\RR-08Application\obj\Debug\net6.0-windows\RR-08Application.AssemblyInfo.vb
+C:\Users\Hp\Desktop\VBNet\RR-08Application\obj\Debug\net6.0-windows\RR-08Application.vbproj.CoreCompileInputs.cache
+C:\Users\Hp\Desktop\VBNet\RR-08Application\obj\Debug\net6.0-windows\RR-08Application.dll
+C:\Users\Hp\Desktop\VBNet\RR-08Application\obj\Debug\net6.0-windows\refint\RR-08Application.dll
+C:\Users\Hp\Desktop\VBNet\RR-08Application\obj\Debug\net6.0-windows\RR-08Application.pdb
+C:\Users\Hp\Desktop\VBNet\RR-08Application\obj\Debug\net6.0-windows\RR-08Application.genruntimeconfig.cache
+C:\Users\Hp\Desktop\VBNet\RR-08Application\obj\Debug\net6.0-windows\ref\RR-08Application.dll
