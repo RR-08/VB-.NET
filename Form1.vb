@@ -101,5 +101,30 @@ Public Class Form1
         iRes = iNum1 ^ iNum2
         MsgBox("Number1 raised to the power of Number2 " & iRes)
 
+        'for multiple operands
+        'BO(DM)(AS) - Brackets Order Division Multiplication Addition Subtraction
+        'PE(MD)(AS) - Parenthesis Exponentiation Multiplcation Division Addition Subtraction
+        'Please excuse my dear aunt sally - to remember the above rule
+
     End Sub
+
+    Private Sub btnIf_Click(sender As Object, e As EventArgs) Handles btnIf.Click
+
+        Dim stCountry As String
+        stCountry = lstCntry.SelectedItem
+
+        If stCountry.ToUpper = "AUSTRALIA" Then
+            MsgBox("Hello Mate")
+        ElseIf stCountry.ToUpper = "JAPAN" Then
+            MsgBox("Konnichiwa")
+        ElseIf stCountry.ToUpper = "INDIA" Then
+            MsgBox("Namaste")
+        Else
+            MsgBox("Hello There")
+        End If
+
+
+    End Sub
+
+
 End Class

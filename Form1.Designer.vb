@@ -39,6 +39,9 @@ Partial Class Form1
         lbNum1 = New Label()
         lbNum2 = New Label()
         Label4 = New Label()
+        btnIf = New Button()
+        Label5 = New Label()
+        lstCntry = New ListBox()
         SuspendLayout()
         ' 
         ' btnStart
@@ -157,7 +160,7 @@ Partial Class Form1
         ' btnCalculate
         ' 
         btnCalculate.BackColor = SystemColors.ActiveCaption
-        btnCalculate.Location = New Point(602, 299)
+        btnCalculate.Location = New Point(602, 306)
         btnCalculate.Name = "btnCalculate"
         btnCalculate.Size = New Size(112, 34)
         btnCalculate.TabIndex = 13
@@ -192,11 +195,44 @@ Partial Class Form1
         Label4.TabIndex = 16
         Label4.Text = "Arithematic Operations"
         ' 
+        ' btnIf
+        ' 
+        btnIf.BackColor = Color.ForestGreen
+        btnIf.Location = New Point(68, 607)
+        btnIf.Name = "btnIf"
+        btnIf.Size = New Size(112, 34)
+        btnIf.TabIndex = 17
+        btnIf.Text = "Selection (If)"
+        btnIf.UseVisualStyleBackColor = False
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Location = New Point(68, 431)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(158, 25)
+        Label5.TabIndex = 18
+        Label5.Text = "Enter your country"
+        ' 
+        ' lstCntry
+        ' 
+        lstCntry.BackColor = SystemColors.HighlightText
+        lstCntry.FormattingEnabled = True
+        lstCntry.ItemHeight = 25
+        lstCntry.Items.AddRange(New Object() {"Australia", "India", "Pakistan", "Japan", "Germany"})
+        lstCntry.Location = New Point(68, 467)
+        lstCntry.Name = "lstCntry"
+        lstCntry.Size = New Size(180, 129)
+        lstCntry.TabIndex = 19
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(887, 450)
+        ClientSize = New Size(813, 668)
+        Controls.Add(lstCntry)
+        Controls.Add(Label5)
+        Controls.Add(btnIf)
         Controls.Add(Label4)
         Controls.Add(lbNum2)
         Controls.Add(lbNum1)
@@ -237,4 +273,7 @@ Partial Class Form1
     Friend WithEvents lbNum1 As Label
     Friend WithEvents lbNum2 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents btnIf As Button
+    Friend WithEvents Label5 As Label
+    Public WithEvents lstCntry As ListBox
 End Class
