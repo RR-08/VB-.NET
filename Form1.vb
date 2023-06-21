@@ -73,4 +73,33 @@ Public Class Form1
 
 
     End Sub
+
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Dim iNum1 As Double
+        Dim iNum2 As Double
+
+        Dim iRes As Double
+
+        iNum1 = txtNum1.Text
+        iNum2 = txtNum2.Text
+        iRes = iNum1 + iNum2
+        MsgBox("The sum is " & iRes)
+
+        iRes = iNum1 - iNum2
+        MsgBox("The subtraction is " & iRes)
+
+        iRes = iNum1 * iNum2
+        MsgBox("The product is " & iRes)
+
+        iRes = iNum1 / iNum2
+        MsgBox("The division is " & iRes)
+
+        'only whole number part remains
+        iRes = iNum1 \ iNum2
+        MsgBox("The whole no on division is " & iRes)
+
+        iRes = iNum1 ^ iNum2
+        MsgBox("Number1 raised to the power of Number2 " & iRes)
+
+    End Sub
 End Class

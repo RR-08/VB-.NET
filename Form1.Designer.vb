@@ -33,13 +33,19 @@ Partial Class Form1
         TextBox2 = New TextBox()
         TextBox3 = New TextBox()
         btnGo = New Button()
+        txtNum1 = New TextBox()
+        txtNum2 = New TextBox()
+        btnCalculate = New Button()
+        lbNum1 = New Label()
+        lbNum2 = New Label()
+        Label4 = New Label()
         SuspendLayout()
         ' 
         ' btnStart
         ' 
         btnStart.BackColor = Color.IndianRed
         btnStart.BackgroundImageLayout = ImageLayout.None
-        btnStart.Location = New Point(204, 361)
+        btnStart.Location = New Point(233, 288)
         btnStart.Name = "btnStart"
         btnStart.Size = New Size(262, 71)
         btnStart.TabIndex = 0
@@ -49,7 +55,7 @@ Partial Class Form1
         ' btnVariable
         ' 
         btnVariable.BackColor = Color.RosyBrown
-        btnVariable.Location = New Point(204, 284)
+        btnVariable.Location = New Point(233, 211)
         btnVariable.Name = "btnVariable"
         btnVariable.Size = New Size(262, 71)
         btnVariable.TabIndex = 1
@@ -59,7 +65,7 @@ Partial Class Form1
         ' btnDatatype
         ' 
         btnDatatype.BackColor = Color.WhiteSmoke
-        btnDatatype.Location = New Point(472, 284)
+        btnDatatype.Location = New Point(233, 138)
         btnDatatype.Name = "btnDatatype"
         btnDatatype.Size = New Size(262, 71)
         btnDatatype.TabIndex = 2
@@ -69,7 +75,7 @@ Partial Class Form1
         ' btnInput
         ' 
         btnInput.BackColor = Color.Gainsboro
-        btnInput.Location = New Point(472, 361)
+        btnInput.Location = New Point(233, 61)
         btnInput.Name = "btnInput"
         btnInput.Size = New Size(262, 71)
         btnInput.TabIndex = 3
@@ -79,7 +85,7 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(206, 64)
+        Label1.Location = New Point(68, 61)
         Label1.Name = "Label1"
         Label1.Size = New Size(97, 25)
         Label1.TabIndex = 4
@@ -88,7 +94,7 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(206, 115)
+        Label2.Location = New Point(69, 147)
         Label2.Name = "Label2"
         Label2.Size = New Size(95, 25)
         Label2.TabIndex = 5
@@ -97,7 +103,7 @@ Partial Class Form1
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(568, 67)
+        Label3.Location = New Point(82, 233)
         Label3.Name = "Label3"
         Label3.Size = New Size(69, 25)
         Label3.TabIndex = 6
@@ -105,21 +111,21 @@ Partial Class Form1
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(352, 61)
+        TextBox1.Location = New Point(41, 101)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(150, 31)
         TextBox1.TabIndex = 7
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(352, 112)
+        TextBox2.Location = New Point(41, 187)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(150, 31)
         TextBox2.TabIndex = 8
         ' 
         ' TextBox3
         ' 
-        TextBox3.Location = New Point(687, 64)
+        TextBox3.Location = New Point(41, 273)
         TextBox3.Name = "TextBox3"
         TextBox3.Size = New Size(150, 31)
         TextBox3.TabIndex = 9
@@ -127,18 +133,76 @@ Partial Class Form1
         ' btnGo
         ' 
         btnGo.BackColor = Color.Lavender
-        btnGo.Location = New Point(704, 115)
+        btnGo.Location = New Point(60, 319)
         btnGo.Name = "btnGo"
         btnGo.Size = New Size(112, 34)
         btnGo.TabIndex = 10
         btnGo.Text = "Go"
         btnGo.UseVisualStyleBackColor = False
         ' 
+        ' txtNum1
+        ' 
+        txtNum1.Location = New Point(583, 164)
+        txtNum1.Name = "txtNum1"
+        txtNum1.Size = New Size(150, 31)
+        txtNum1.TabIndex = 11
+        ' 
+        ' txtNum2
+        ' 
+        txtNum2.Location = New Point(583, 252)
+        txtNum2.Name = "txtNum2"
+        txtNum2.Size = New Size(150, 31)
+        txtNum2.TabIndex = 12
+        ' 
+        ' btnCalculate
+        ' 
+        btnCalculate.BackColor = SystemColors.ActiveCaption
+        btnCalculate.Location = New Point(602, 299)
+        btnCalculate.Name = "btnCalculate"
+        btnCalculate.Size = New Size(112, 34)
+        btnCalculate.TabIndex = 13
+        btnCalculate.Text = "Calculate"
+        btnCalculate.UseVisualStyleBackColor = False
+        ' 
+        ' lbNum1
+        ' 
+        lbNum1.AutoSize = True
+        lbNum1.Location = New Point(612, 123)
+        lbNum1.Name = "lbNum1"
+        lbNum1.Size = New Size(92, 25)
+        lbNum1.TabIndex = 14
+        lbNum1.Text = "Number 1"
+        lbNum1.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' lbNum2
+        ' 
+        lbNum2.AutoSize = True
+        lbNum2.Location = New Point(612, 211)
+        lbNum2.Name = "lbNum2"
+        lbNum2.Size = New Size(92, 25)
+        lbNum2.TabIndex = 15
+        lbNum2.Text = "Number 2"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(556, 61)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(195, 25)
+        Label4.TabIndex = 16
+        Label4.Text = "Arithematic Operations"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(887, 450)
+        Controls.Add(Label4)
+        Controls.Add(lbNum2)
+        Controls.Add(lbNum1)
+        Controls.Add(btnCalculate)
+        Controls.Add(txtNum2)
+        Controls.Add(txtNum1)
         Controls.Add(btnGo)
         Controls.Add(TextBox3)
         Controls.Add(TextBox2)
@@ -167,4 +231,10 @@ Partial Class Form1
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents btnGo As Button
+    Friend WithEvents txtNum1 As TextBox
+    Friend WithEvents txtNum2 As TextBox
+    Friend WithEvents btnCalculate As Button
+    Friend WithEvents lbNum1 As Label
+    Friend WithEvents lbNum2 As Label
+    Friend WithEvents Label4 As Label
 End Class
