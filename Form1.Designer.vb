@@ -42,6 +42,9 @@ Partial Class Form1
         btnIf = New Button()
         Label5 = New Label()
         lstCntry = New ListBox()
+        lbScore = New Label()
+        tbScore = New TextBox()
+        btnScore = New Button()
         SuspendLayout()
         ' 
         ' btnStart
@@ -225,11 +228,41 @@ Partial Class Form1
         lstCntry.Size = New Size(180, 129)
         lstCntry.TabIndex = 19
         ' 
+        ' lbScore
+        ' 
+        lbScore.AutoSize = True
+        lbScore.Location = New Point(333, 445)
+        lbScore.Name = "lbScore"
+        lbScore.Size = New Size(101, 25)
+        lbScore.TabIndex = 20
+        lbScore.Text = "Enter Score"
+        ' 
+        ' tbScore
+        ' 
+        tbScore.Location = New Point(440, 442)
+        tbScore.MaxLength = 3
+        tbScore.Name = "tbScore"
+        tbScore.Size = New Size(150, 31)
+        tbScore.TabIndex = 21
+        ' 
+        ' btnScore
+        ' 
+        btnScore.BackColor = SystemColors.Highlight
+        btnScore.Location = New Point(612, 440)
+        btnScore.Name = "btnScore"
+        btnScore.Size = New Size(112, 34)
+        btnScore.TabIndex = 22
+        btnScore.Text = "Grade"
+        btnScore.UseVisualStyleBackColor = False
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(813, 668)
+        Controls.Add(btnScore)
+        Controls.Add(tbScore)
+        Controls.Add(lbScore)
         Controls.Add(lstCntry)
         Controls.Add(Label5)
         Controls.Add(btnIf)
@@ -276,4 +309,7 @@ Partial Class Form1
     Friend WithEvents btnIf As Button
     Friend WithEvents Label5 As Label
     Public WithEvents lstCntry As ListBox
+    Friend WithEvents lbScore As Label
+    Friend WithEvents tbScore As TextBox
+    Friend WithEvents btnScore As Button
 End Class

@@ -1,4 +1,5 @@
-﻿Imports System.Windows.Forms.Design
+﻿Imports System.ComponentModel.Design.Serialization
+Imports System.Windows.Forms.Design
 
 Public Class Form1
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
@@ -126,5 +127,36 @@ Public Class Form1
 
     End Sub
 
+    Private Sub btnScore_Click(sender As Object, e As EventArgs) Handles btnScore.Click
 
+        Dim iScore As Integer
+
+        If IsNumeric(tbScore.Text) = True Then
+            iScore = CInt(tbScore.Text)
+        Else
+            MsgBox("You must enter a number")
+            Exit Sub
+
+        End If
+
+
+        If Not (iScore >= 0 And iScore <= 100) Then
+            MsgBox("Not a valid score")
+        ElseIf iScore <= 20 Then
+            MsgBox("Grade F")
+        ElseIf iScore > 20 And iScore <= 30 Then
+            MsgBox("Grade E")
+        ElseIf iScore > 30 And iScore <= 40 Then
+            MsgBox("Grade D")
+        ElseIf iScore > 40 And iScore <= 60 Then
+            MsgBox("Grade C")
+        ElseIf iScore > 60 And iScore <= 70 Then
+            MsgBox("Grade B")
+        Else
+            MsgBox("Grade A")
+        End If
+
+        MsgBox("All done")
+
+    End Sub
 End Class
