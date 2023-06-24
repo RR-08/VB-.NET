@@ -1,5 +1,6 @@
 ﻿Imports System.ComponentModel.Design.Serialization
 Imports System.Windows.Forms.Design
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar
 
 Public Class Form1
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
@@ -192,6 +193,8 @@ Public Class Form1
     End Sub
 
     Private Sub btnPattern_Click(sender As Object, e As EventArgs) Handles btnPattern.Click
+        ' for loop
+
         Dim icount As Integer
         Dim stcount As String
         For icount = 1 To 5
@@ -200,16 +203,43 @@ Public Class Form1
             'MsgBox("*")
         Next
         'step is like i++ in c++ 
-        For icount = 0 To 50 Step 10
-            MsgBox("Hello " & icount)
-        Next
+        'For icount = 0 To 50 Step 10
+        'MsgBox("Hello " & icount)
+        'Next
         For icount = 0 To 50 Step 10
             stcount = stcount & icount & vbNewLine
             'all output in one msgbox 
         Next
         MsgBox(stcount)
 
+        icount = 0
+        'do while loop
+        Do While icount <= 5
+            icount = icount + 1
+            MsgBox("hello " & icount)
+        Loop
+        icount = 0
+        Do Until icount = 5
+            icount = icount + 1
+            MsgBox("hello * " & icount)
+        Loop
+        ' to run the condition ateast once 
+        icount = 0
+        Do
+            icount = icount + 1
+            MsgBox("hello #  " & icount)
+        Loop Until icount = 5
+
+        icount = 0
+        Do
+            icount = icount + 1
+            MsgBox("hello #  " & icount)
+        Loop While icount < 5
+
+
+
         MsgBox("all done")
+
     End Sub
 
     Private Sub btnEvenOdd_Click(sender As Object, e As EventArgs) Handles btnEvenOdd.Click
@@ -228,7 +258,7 @@ Public Class Form1
                 stOutput = stOutput & iCount & vbNewLine
             Next
         Else
-            For iCount = 0 To iNum Step 2
+            For iCount = 2 To iNum Step 2
                 stOutput = stOutput & iCount & vbNewLine
             Next
         End If
