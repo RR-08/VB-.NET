@@ -197,7 +197,6 @@ Public Class Form1
 
         Dim icount As Integer
         Dim stcount As String
-        'for next loop count controll loop
         For icount = 1 To 5
             Beep()
             Threading.Thread.Sleep(1000)
@@ -212,7 +211,7 @@ Public Class Form1
             'all output in one msgbox 
         Next
         MsgBox(stcount)
-        'do loop is called conditon controlled loop
+
         icount = 0
         'do while loop
         Do While icount <= 5
@@ -234,7 +233,7 @@ Public Class Form1
         icount = 0
         Do
             icount = icount + 1
-            MsgBox("hello ^ " & icount)
+            MsgBox("hello #  " & icount)
         Loop While icount < 5
 
 
