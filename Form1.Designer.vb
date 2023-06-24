@@ -45,6 +45,11 @@ Partial Class Form1
         lbScore = New Label()
         tbScore = New TextBox()
         btnScore = New Button()
+        btnSelect = New Button()
+        Label6 = New Label()
+        tbTemp = New TextBox()
+        btnPattern = New Button()
+        btnEvenOdd = New Button()
         SuspendLayout()
         ' 
         ' btnStart
@@ -231,7 +236,7 @@ Partial Class Form1
         ' lbScore
         ' 
         lbScore.AutoSize = True
-        lbScore.Location = New Point(333, 445)
+        lbScore.Location = New Point(321, 449)
         lbScore.Name = "lbScore"
         lbScore.Size = New Size(101, 25)
         lbScore.TabIndex = 20
@@ -255,11 +260,61 @@ Partial Class Form1
         btnScore.Text = "Grade"
         btnScore.UseVisualStyleBackColor = False
         ' 
+        ' btnSelect
+        ' 
+        btnSelect.BackColor = SystemColors.ActiveCaption
+        btnSelect.Location = New Point(663, 494)
+        btnSelect.Name = "btnSelect"
+        btnSelect.Size = New Size(112, 34)
+        btnSelect.TabIndex = 23
+        btnSelect.Text = "SelectCase"
+        btnSelect.UseVisualStyleBackColor = False
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Location = New Point(321, 502)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(155, 25)
+        Label6.TabIndex = 24
+        Label6.Text = "Enter Temperature"
+        ' 
+        ' tbTemp
+        ' 
+        tbTemp.Location = New Point(492, 496)
+        tbTemp.Name = "tbTemp"
+        tbTemp.Size = New Size(150, 31)
+        tbTemp.TabIndex = 25
+        ' 
+        ' btnPattern
+        ' 
+        btnPattern.Location = New Point(321, 562)
+        btnPattern.Name = "btnPattern"
+        btnPattern.Size = New Size(112, 34)
+        btnPattern.TabIndex = 26
+        btnPattern.Text = "Beep Sound"
+        btnPattern.UseVisualStyleBackColor = True
+        ' 
+        ' btnEvenOdd
+        ' 
+        btnEvenOdd.BackColor = Color.IndianRed
+        btnEvenOdd.Location = New Point(449, 562)
+        btnEvenOdd.Name = "btnEvenOdd"
+        btnEvenOdd.Size = New Size(207, 34)
+        btnEvenOdd.TabIndex = 27
+        btnEvenOdd.Text = "CountUpOddOrEven"
+        btnEvenOdd.UseVisualStyleBackColor = False
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(813, 668)
+        Controls.Add(btnEvenOdd)
+        Controls.Add(btnPattern)
+        Controls.Add(tbTemp)
+        Controls.Add(Label6)
+        Controls.Add(btnSelect)
         Controls.Add(btnScore)
         Controls.Add(tbScore)
         Controls.Add(lbScore)
@@ -312,4 +367,9 @@ Partial Class Form1
     Friend WithEvents lbScore As Label
     Friend WithEvents tbScore As TextBox
     Friend WithEvents btnScore As Button
+    Friend WithEvents btnSelect As Button
+    Friend WithEvents Label6 As Label
+    Friend WithEvents tbTemp As TextBox
+    Friend WithEvents btnPattern As Button
+    Friend WithEvents btnEvenOdd As Button
 End Class

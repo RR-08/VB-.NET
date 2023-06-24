@@ -51,7 +51,7 @@ Public Class Form1
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnInput.Click
 
-
+        'how to ask for input in pop up input box
         Dim stFirstName As String
         stFirstName = InputBox("Enter your first name ")
         MsgBox("Hello " & stFirstName)
@@ -113,7 +113,7 @@ Public Class Form1
 
         Dim stCountry As String
         stCountry = lstCntry.SelectedItem
-
+        '= is used instead of == unlike in c++
         If stCountry.ToUpper = "AUSTRALIA" Then
             MsgBox("Hello Mate")
         ElseIf stCountry.ToUpper = "JAPAN" Then
@@ -157,6 +157,83 @@ Public Class Form1
         End If
 
         MsgBox("All done")
+
+    End Sub
+
+    Private Sub btnSelect_Click(sender As Object, e As EventArgs) Handles btnSelect.Click
+
+
+        Dim iTemp As Integer
+        iTemp = CInt(tbTemp.Text)
+        Dim iWindSpeed As Integer
+        iWindSpeed = 30
+
+
+        Select Case iTemp
+            Case Is = 0
+                MsgBox("Freezing")
+                MsgBox("Water will freeze")
+            Case Is < 0
+                MsgBox("Sub Zero")
+                If (iWindSpeed > 20) Then
+                    MsgBox("Wind is above 20mph")
+                End If
+            Case 1, 2, 3, 4, 5, 6, 7, 8
+                MsgBox("cold")
+            Case 9 To 11
+                MsgBox("warm")
+            Case Else
+                MsgBox("Above 11")
+        End Select
+
+
+
+
+    End Sub
+
+    Private Sub btnPattern_Click(sender As Object, e As EventArgs) Handles btnPattern.Click
+        Dim icount As Integer
+        Dim stcount As String
+        For icount = 1 To 5
+            Beep()
+            Threading.Thread.Sleep(1000)
+            'MsgBox("*")
+        Next
+        'step is like i++ in c++ 
+        For icount = 0 To 50 Step 10
+            MsgBox("Hello " & icount)
+        Next
+        For icount = 0 To 50 Step 10
+            stcount = stcount & icount & vbNewLine
+            'all output in one msgbox 
+        Next
+        MsgBox(stcount)
+
+        MsgBox("all done")
+    End Sub
+
+    Private Sub btnEvenOdd_Click(sender As Object, e As EventArgs) Handles btnEvenOdd.Click
+
+
+        Dim iNum As Integer
+        Dim iCount As Integer
+        Dim stNum As String
+        Dim stOutput As String
+
+        iNum = InputBox("What no you want to count upto? ")
+        stNum = InputBox("odd/even")
+
+        If (stNum = "odd") Then
+            For iCount = 1 To iNum Step 2
+                stOutput = stOutput & iCount & vbNewLine
+            Next
+        Else
+            For iCount = 0 To iNum Step 2
+                stOutput = stOutput & iCount & vbNewLine
+            Next
+        End If
+
+        MsgBox(stOutput)
 
     End Sub
 End Class
