@@ -1,5 +1,6 @@
 ﻿Imports System.ComponentModel.Design.Serialization
 Imports System.Windows.Forms.Design
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar
 
 Public Class Form1
@@ -265,5 +266,49 @@ Public Class Form1
 
         MsgBox(stOutput)
 
+    End Sub
+
+    Private Sub btnLargest_Click(sender As Object, e As EventArgs) Handles btnLargest.Click
+
+        Dim arrStNum(5) As Integer
+        arrStNum(0) = 3
+        arrStNum(1) = 1
+        arrStNum(2) = 8
+        arrStNum(3) = 6
+        arrStNum(4) = 7
+
+        Dim iLarge As Integer
+        iLarge = arrStNum(0)
+
+        Dim i As Integer
+        For i = 1 To 4
+            If (iLarge < arrStNum(i)) Then
+                iLarge = arrStNum(i)
+            End If
+        Next
+        MsgBox("largest element is " & iLarge)
+
+    End Sub
+
+    Private Sub btnSmallest_Click(sender As Object, e As EventArgs) Handles btnSmallest.Click
+
+
+        Dim arrStNum(5) As Integer
+        arrStNum(0) = 3
+        arrStNum(1) = 1
+        arrStNum(2) = 8
+        arrStNum(3) = 6
+        arrStNum(4) = 0
+
+        Dim iSmall As Integer
+        iSmall = arrStNum(0)
+
+        Dim i As Integer
+        For i = 1 To 4
+            If (iSmall > arrStNum(i)) Then
+                iSmall = arrStNum(i)
+            End If
+        Next
+        MsgBox("largest smallest is " & iSmall)
     End Sub
 End Class

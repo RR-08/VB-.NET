@@ -50,6 +50,9 @@ Partial Class Form1
         tbTemp = New TextBox()
         btnPattern = New Button()
         btnEvenOdd = New Button()
+        Label7 = New Label()
+        btnLargest = New Button()
+        btnSmallest = New Button()
         SuspendLayout()
         ' 
         ' btnStart
@@ -305,11 +308,43 @@ Partial Class Form1
         btnEvenOdd.Text = "CountUpOddOrEven"
         btnEvenOdd.UseVisualStyleBackColor = False
         ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Location = New Point(321, 632)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(78, 25)
+        Label7.TabIndex = 28
+        Label7.Text = "3,1,8,6,7"
+        ' 
+        ' btnLargest
+        ' 
+        btnLargest.BackColor = Color.LimeGreen
+        btnLargest.Location = New Point(417, 627)
+        btnLargest.Name = "btnLargest"
+        btnLargest.Size = New Size(112, 34)
+        btnLargest.TabIndex = 29
+        btnLargest.Text = "Largest"
+        btnLargest.UseVisualStyleBackColor = False
+        ' 
+        ' btnSmallest
+        ' 
+        btnSmallest.BackColor = Color.LimeGreen
+        btnSmallest.Location = New Point(556, 627)
+        btnSmallest.Name = "btnSmallest"
+        btnSmallest.Size = New Size(112, 34)
+        btnSmallest.TabIndex = 30
+        btnSmallest.Text = "Smallest"
+        btnSmallest.UseVisualStyleBackColor = False
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(813, 668)
+        ClientSize = New Size(813, 754)
+        Controls.Add(btnSmallest)
+        Controls.Add(btnLargest)
+        Controls.Add(Label7)
         Controls.Add(btnEvenOdd)
         Controls.Add(btnPattern)
         Controls.Add(tbTemp)
@@ -372,4 +407,7 @@ Partial Class Form1
     Friend WithEvents tbTemp As TextBox
     Friend WithEvents btnPattern As Button
     Friend WithEvents btnEvenOdd As Button
+    Friend WithEvents Label7 As Label
+    Friend WithEvents btnLargest As Button
+    Friend WithEvents btnSmallest As Button
 End Class
